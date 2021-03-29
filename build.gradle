@@ -1,5 +1,10 @@
 plugins {
-	id 'java'	
+	id 'java'
+	id 'application'	
+}
+
+application{
+	mainClassName = 'src.main.java.myproject.ArrayTest.java'
 }
 
 dependencies{
