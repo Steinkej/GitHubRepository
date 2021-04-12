@@ -1,11 +1,8 @@
 plugins {
 	id 'java'
-	id 'application'	
+	
 }
 
-application{
-	mainClassName = 'src.main.java.myproject.ArrayTest.java'
-}
 
 dependencies{
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
