@@ -9,8 +9,8 @@ public class BankAccount{
         public long foreignValue;
         public double conversionfactor;
         
-        public BankAccount(long balance){
-        this.balance = balance;
+        public BankAccount(){
+       
         }
         
         public static void main(String[] args) {
