@@ -82,7 +82,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\projekt.jar;%APP_HOME%\lib\commons-lang3-3.9.jar
 
 @rem Execute projekt
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PROJEKT_OPTS%  -classpath "%CLASSPATH%" src.main.java.myproject.ArrayTest.java %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %PROJEKT_OPTS%  -classpath "%CLASSPATH%" ArrayTest.java %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

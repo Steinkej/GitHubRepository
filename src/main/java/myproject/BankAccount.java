@@ -1,38 +1,34 @@
-package jander4;
+package myproject;
 
 import java.lang.Math;
 
 public class BankAccount{
-        public long balance;
-        public long einnahme;
-        public long ausgabe;
-        public long foreignValue;
-        public double conversionfactor;
+        private long balance;
+        private long einnahme;
+        private long ausgabe;
+        private long foreignValue;
+        private double conversionfactor;
         
-        public BankAccount(){
-       
-        }
+      
         
-        public static void main(String[] args) {
-        }
-        
-        private void getBalance(){
+        public long getBalance(){
                 System.out.println("Der Kontostand ist bei: "+ balance);
+		return balance;
         }
         
-        private long deposit(long einnahme){
+        public long deposit(long einnahme){
         long nbalance = balance + einnahme;
-        nbalance = balance;
+        balance = nbalance;
         return balance;
         }
         
-        private long withdraw(long ausgabe){
+        public long withdraw(long ausgabe){
         long cbalance = balance - ausgabe;
-        cbalance = balance;
+        balance = cbalance;
         return balance;
         }
         
-        private long withdraw(long foreignValue, double conversionfactor){
+        public long withdraw(long foreignValue, double conversionfactor){
       
         double nforeignValue;
        
@@ -42,7 +38,7 @@ public class BankAccount{
         Math.ceil(nforeignValue);
         long aforeignValue =(long)nforeignValue;
         long nbalance = balance - aforeignValue;
-        nbalance = balance;
+        balance = nbalance;
         return balance;
         }
 }
